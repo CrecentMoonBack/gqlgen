@@ -1,0 +1,13 @@
+type Query {
+  hello: String!
+  getMessages:  [String]
+}
+
+type Mutation {
+  updateMessage(input: String!): String!
+  deleteMessage(index: Int!): String!
+}
+
+type Subscription {
+  messageStream: String!
+}
